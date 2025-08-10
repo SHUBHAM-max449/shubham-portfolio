@@ -1,0 +1,37 @@
+{
+    "name": "shubham-portfolio",
+    "version": "1.0.0",
+    "description": "Modern portfolio website for Shubham Kumar - ML Engineer & Data Scientist",
+    "main": "index.html",
+    "scripts": {
+      "dev": "python -m http.server 8000",
+      "serve": "npx serve .",
+      "build": "echo 'No build process needed for static site'",
+      "deploy": "echo 'Deploy to Netlify or Vercel'",
+      "lighthouse": "npx lighthouse http://localhost:8000 --output html --output-path ./lighthouse-report.html"
+    },
+    "keywords": [
+      "portfolio",
+      "machine-learning",
+      "data-science",
+      "ai",
+      "mlops",
+      "static-website"
+    ],
+    "author": "Shubham Kumar",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/yourusername/shubham-portfolio.git"
+    },
+    "homepage": "https://yourusername.github.io/shubham-portfolio",
+    "devDependencies": {
+      "lighthouse": "^10.0.0",
+      "serve": "^14.0.0"
+    },
+    "browserslist": [
+      "> 1%",
+      "last 2 versions",
+      "not dead"
+    ]
+  }

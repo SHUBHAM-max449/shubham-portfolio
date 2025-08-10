@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Chitaguppe - ML Engineer & Data Scientist</title>
+    <meta name="description" content="Machine Learning Engineer and Data Scientist specializing in AI-driven solutions, MLOps, and data engineering. Based in Bremen, Germany.">
+    <meta name="keywords" content="Machine Learning, AI, Data Science, MLOps, Python, AWS, TensorFlow, Bremen, Germany">
+    <meta name="author" content="Shubham Chitaguppe">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Shubham Chitaguppe - ML Engineer & Data Scientist">
+    <meta property="og:description" content="Specialized in AI-driven solutions, MLOps, and data engineering with 3+ years of experience.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shubham Chitaguppe - ML Engineer & Data Scientist">
+    <meta name="twitter:description" content="Specialized in AI-driven solutions, MLOps, and data engineering.">
+    
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="logo">SC.</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="assets/documents/Shubham_CV.pdf" class="download-btn" download>📄 Download CV</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">AI Engineer & Data Scientist</div>
+                <h1 class="hero-title">
+                    Shubham
+                    <span class="hero-name">Chitaguppe</span>
+                </h1>
+                <p class="hero-description">
+                    Solving complex problems with AI. I specialize in developing AI-driven solutions to optimize workflows and deliver actionable insights through machine learning, computer vision, and natural language processing.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('projects')">View Portfolio</button>
+                    <button class="btn-secondary" onclick="scrollToSection('contact')">Contact Me →</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <img src="assets/images/profile.jpg" alt="Shubham Chitaguppe" class="profile-pic" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="profile-placeholder" style="display: none;">
+                        <span>SC</span>
+                    </div>
+                    <div class="experience-badge">
+                        <strong>3+ Years Experience</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Biography</h3>
+                <p>I am a Machine Learning enthusiast with a strong foundation in MLOps, data engineering, and AI application development through comprehensive hands-on projects and internship experience. I have built production-ready ML systems including RAG chatbots, automated MLOps pipelines, and predictive models achieving 89% accuracy.</p>
+                <br>
+                <p>With proficiency in Python, TensorFlow, AWS, Docker, and modern AI frameworks, I have proven ability to deliver end-to-end ML solutions from concept to deployment. My professional journey includes developing chatbots, document processing pipelines, and image enhancement systems, where I've consistently delivered high-quality solutions that meet business objectives.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Machine Learning & Deep Learning</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">scikit-learn</span>
+                        <span class="skill-tag">XGBoost</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Computer Vision</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">YOLOv8</span>
+                        <span class="skill-tag">EasyOCR</span>
+                        <span class="skill-tag">Object Detection</span>
+                        <span class="skill-tag">OCR</span>
+                        <span class="skill-tag">Layout Analysis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Natural Language Processing</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">LangGraph</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">spaCy</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Cloud & DevOps</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Data Engineering & MLOps</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MLflow</span>
+                        <span class="skill-tag">DVC</span>
+                        <span class="skill-tag">Apache Airflow</span>
+                        <span class="skill-tag">Kafka</span>
+                        <span class="skill-tag">Databricks</span>
+                        <span class="skill-tag">Prometheus</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Data Analysis & Visualization</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Matplotlib</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-content">
+            <div class="education-item">
+                <div class="education-header">
+                    <div>
+                        <h3 class="education-title">Master of Business Administration</h3>
+                        <p class="education-school">HSB Hochschule Bremen</p>
+                        <p class="education-location">Bremen, Germany</p>
+                    </div>
+                    <div class="education-date">11/2024 - 03/2026</div>
+                </div>
+                <p>Focused on Business Analytics, Digital Transformation, and Project Management</p>
+            </div>
+            <div class="education-item">
+                <div class="education-header">
+                    <div>
+                        <h3 class="education-title">Bachelor's in Electronics Engineering</h3>
+                        <p class="education-school">BMSCE</p>
+                        <p class="education-location">Bangalore, India</p>
+                    </div>
+                    <div class="education-date">08/2018 - 07/2022</div>
+                </div>
+                <p>Focused on Python, Machine Learning, Deep Learning, C Programming, Robotics | <strong>CGPA: 8.6</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-content">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Technical Consultant – Cloud Solutions</h3>
+                        <p class="experience-company">BLUE YONDER (Supply Chain Management)</p>
+                        <p class="education-location">Bangalore, India</p>
+                    </div>
+                    <div class="experience-date">01/2022 – 10/2024</div>
+                </div>
+                <ul class="experience-achievements">
+                    <li>Maintained ETL data pipelines orchestrated with Control-M on Azure cloud infrastructure supporting data analytics for supply chain applications SCPO and LCT</li>
+                    <li>Created Data Doctor automated solution for enterprise sales data validation and transformation, processing 500K+ records daily and eliminating 15 hours of manual validation work per week</li>
+                    <li>Delivered measurable impact: 95% improvement in forecast accuracy, 60% increase in planning efficiency, and up to 30% reduction in inventory expenses</li>
+                    <li>Implemented automation scripts using Python, SQL, and Bash, reducing manual operational tasks by 25 hours per week and improving team productivity by 20%</li>
+                    <li>Conducted in-depth analysis of system logs and performance metrics, identifying root causes and implementing fixes that led to an 18% decrease in recurring system issues</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Machine Learning Intern</h3>
+                        <p class="experience-company">VERZEO (Microsoft Partnered)</p>
+                        <p class="education-location">Bangalore, India</p>
+                    </div>
+                    <div class="experience-date">07/2021 – 10/2021</div>
+                </div>
+                <ul class="experience-achievements">
+                    <li>Constructed an Intelligent Student Performance Prediction System achieving 89% accuracy in identifying at-risk students 4-6 weeks early, reducing dropout rates by 18% through interventions</li>
+                    <li>Architected a Personalized Learning Path Recommendation Engine that increased course engagement by 34% by suggesting optimal learning sequences tailored to individual student needs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <h2 class="section-title">Projects</h2>
+        <p class="projects-intro">
+            Here are some of my featured projects that highlight my expertise in AI, machine learning, computer vision, natural language processing, and cloud systems.
+        </p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image project-img-1">
+                    <div class="project-overlay">
+                        <span class="project-icon">🚗</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Cloud-Based MLOps Pipeline for Vehicle Insurance Prediction</h3>
+                    <p class="project-description">Engineered an automated, scalable MLOps pipeline on AWS (EC2, S3) for seamless data ingestion and model training. Streamlined CI/CD workflows for insurance risk models, enhancing deployment speed by 60% and ensuring reproducibility.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">AWS</span>
+                        <span class="project-tag">MLOps</span>
+                        <span class="project-tag">CI/CD</span>
+                        <span class="project-tag">Docker</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">EC2</span>
+                        <span class="project-tag">S3</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image project-img-2">
+                    <div class="project-overlay">
+                        <span class="project-icon">🏥</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Medical Chatbot (RAG Application)</h3>
+                    <p class="project-description">Developed a RAG chatbot using LLMs, LangChain, and Pinecone for accurate, context-aware information retrieval with CI/CD. Deployed scalable, real-time backend with Docker, Flask, and AWS (EC2, ECR) supporting seamless healthcare interactions.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">LLMs</span>
+                        <span class="project-tag">RAG</span>
+                        <span class="project-tag">LangChain</span>
+                        <span class="project-tag">Pinecone</span>
+                        <span class="project-tag">Flask</span>
+                        <span class="project-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image project-img-3">
+                    <div class="project-overlay">
+                        <span class="project-icon">🤖</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">No Code Auto-ML Web App</h3>
+                    <p class="project-description">Built a comprehensive web app using Python and Streamlit that automates the entire ML workflow from data preprocessing to model comparison, reducing manual development time by 70% and enabling non-technical users to build ML models effortlessly.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Streamlit</span>
+                        <span class="project-tag">AutoML</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Machine Learning</span>
+                        <span class="project-tag">Data Science</span>
+                        <span class="project-tag">No-Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-content">
+            <p class="contact-intro">Let's connect and discuss how we can work together on your next AI project.</p>
+            <div class="contact-info">
+                <div class="contact-item" onclick="copyEmail()" title="Click to copy email">
+                    <div class="contact-icon">📧</div>
+                    <h4>Email</h4>
+                    <p>chitaguppeshubham007@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <h4>Phone</h4>
+                    <p>+49 15210165179</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <h4>Location</h4>
+                    <p>Bremen, Germany</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💼</div>
+                    <h4>LinkedIn</h4>
+                    <p><a href="https://www.linkedin.com/in/shubham-chitaguppe-2449821a9/" target="_blank" rel="noopener">Connect with me</a></p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">👨‍💻</div>
+                    <h4>GitHub</h4>
+                    <p><a href="https://github.com/SHUBHAM-max449" target="_blank" rel="noopener">View my code</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Shubham Chitaguppe. All rights reserved.</p>
+            <p>Built with ❤️ for innovation in AI and Machine Learning</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
