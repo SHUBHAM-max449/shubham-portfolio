@@ -25,6 +25,25 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Portfolio website loaded successfully!');
 });
 
+// Scroll to skills grid with smooth animation
+function scrollToSkillsGrid() {
+    const skillsGrid = document.getElementById('skills-grid');
+    if (skillsGrid) {
+        skillsGrid.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+        
+        // Add a subtle highlight effect
+        skillsGrid.style.transform = 'scale(1.02)';
+        skillsGrid.style.transition = 'transform 0.3s ease';
+        
+        setTimeout(() => {
+            skillsGrid.style.transform = 'scale(1)';
+        }, 300);
+    }
+}
+
 // Mobile menu functionality
 function initMobileMenu() {
     const hamburger = document.getElementById('hamburger');

@@ -35,7 +35,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -50,7 +50,7 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .nav-link {
@@ -60,9 +60,13 @@ body {
     transition: color 0.2s ease;
     cursor: pointer;
     position: relative;
+    padding: 0.5rem 0; /* Add vertical padding for better spacing */
+    white-space: nowrap;
 }
 
-.nav-link:hover,
+.nav-link:hover {
+    color: #2563eb;
+}
 .nav-link.active {
     color: #2563eb;
 }
@@ -75,12 +79,16 @@ body {
     bottom: -5px;
     left: 0;
     background: #2563eb;
-    transition: width 0.2s ease;
+    transition: width 0.3s ease;
 }
 
 .nav-link:hover::after,
 .nav-link.active::after {
     width: 100%;
+}
+
+.nav-link.active {
+    color: #2563eb;
 }
 
 .download-btn {
@@ -156,7 +164,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
     position: relative;
@@ -320,7 +328,7 @@ body {
 /* Sections */
 .section {
     padding: 6rem 0 5rem 0; /* CHANGE: Increased top padding from 5rem to 6rem */
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -347,7 +355,7 @@ body {
 /* About Section */
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     gap: 4rem;
     align-items: start;
     scroll-margin-top: 100px;
@@ -371,55 +379,189 @@ body {
     gap: 1.5rem;
 }
 
-.skill-category {
+/* Skills Section Header */
+.skills-section {
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skills-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .skills-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .skills-btn {
+        width: 100%;
+    }
+}
+
+
+.skill-category {
     padding: 1.5rem;
     border-radius: 15px;
-    border-left: 4px solid #2e91c2;
-    transition: transform 0.2s ease;
+    border-left: 4px solid #2563eb;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
-
-.skills-category {
-    background: #f5f5f5;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-/* Add different background colors for each card */
-.skills-category:nth-child(1) {
-background-color: #e3f2fd; /* Light Blue */
-}
-
-.skills-category:nth-child(2) {
-background-color: #e8f5e9; /* Light Green */
-}
-
-.skills-category:nth-child(3) {
-background-color: #fff3e0; /* Light Orange */
-}
-
-.skills-category:nth-child(4) {
-background-color: #f3e5f5; /* Light Purple */
-}
-
-.skills-category:nth-child(5) {
-background-color: #e0f7fa; /* Light Cyan */
-}
-
-.skills-category:nth-child(6) {
-background-color: #fff8e1; /* Light Yellow */
-}
-
 
 .skill-category:hover {
     transform: translateY(-3px);
 }
 
-.skill-category h4 {
-    color: #010308;
-    margin-bottom: 1rem;
-    font-size: 1rem;
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced glassmorphism for different sections */
+.glass-skill {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.glass-project {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Individual color themes for each skill category */
+
+/* Machine Learning & Deep Learning - Blue Theme */
+.skill-category:nth-child(1) {
+    background: linear-gradient(135deg, #f0f6ff 0%, #e5edff 100%);
+    border-left: 4px solid #3b82f6;
+}
+
+.skill-category:nth-child(1) h4 {
+    color: #1f2937;
+}
+
+.skill-category:nth-child(1) .skill-tag {
+    background: white;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+}
+
+.skill-category:nth-child(1) .skill-tag:hover {
+    background: #3b82f6;
+    color: white;
+}
+
+/* Computer Vision - Purple Theme */
+.skill-category:nth-child(2) {
+    background: linear-gradient(135deg, #faf7ff 0%, #f3efff 100%);
+    border-left: 4px solid #8b5cf6;
+}
+
+.skill-category:nth-child(2) h4 {
+    color: #1f2937;
+}
+
+.skill-category:nth-child(2) .skill-tag {
+    background: white;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+}
+
+.skill-category:nth-child(2) .skill-tag:hover {
+    background: #8b5cf6;
+    color: white;
+}
+
+/* Natural Language Processing - Green Theme */
+.skill-category:nth-child(3) {
+    background: linear-gradient(135deg, #f0fdf4 0%, #e8f7ed 100%);
+    border-left: 4px solid #10b981;
+}
+
+.skill-category:nth-child(3) h4 {
+    color: #1f2937;
+}
+
+.skill-category:nth-child(3) .skill-tag {
+    background: white;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+}
+
+.skill-category:nth-child(3) .skill-tag:hover {
+    background: #10b981;
+    color: white;
+}
+
+/* Cloud & DevOps - Orange Theme */
+.skill-category:nth-child(4) {
+    background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+    border-left: 4px solid #f97316;
+}
+
+.skill-category:nth-child(4) h4 {
+    color: #1f2937;
+}
+
+.skill-category:nth-child(4) .skill-tag {
+    background: white;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+}
+
+.skill-category:nth-child(4) .skill-tag:hover {
+    background: #f97316;
+    color: white;
+}
+
+/* Data Analysis & Visualization - Teal Theme */
+.skill-category:nth-child(5) {
+    background: linear-gradient(135deg, #f0fdfa 0%, #e6fffa 100%);
+    border-left: 4px solid #14b8a6;
+}
+
+.skill-category:nth-child(5) h4 {
+    color: #1f2937;
+}
+
+.skill-category:nth-child(5) .skill-tag {
+    background: white;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+}
+
+.skill-category:nth-child(5) .skill-tag:hover {
+    background: #14b8a6;
+    color: white;
+}
+
+/* Software Development - Pink Theme */
+.skill-category:nth-child(6) {
+    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+    border-left: 4px solid #ec4899;
+}
+
+.skill-category:nth-child(6) h4 {
+    color: #1f2937;
+}
+
+.skill-category:nth-child(6) .skill-tag {
+    background: white;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+}
+
+.skill-category:nth-child(6) .skill-tag:hover {
+    background: #ec4899;
+    color: white;
 }
 
 .skill-tags {
@@ -442,6 +584,8 @@ background-color: #fff8e1; /* Light Yellow */
     background: #565cf5;
     color: white;
 }
+
+
 
 /* Education Section */
 .education {
@@ -606,16 +750,15 @@ background-color: #fff8e1; /* Light Yellow */
     justify-content: center;
 }
 
-.project-img-1 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.project-img-2 {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
-.project-img-3 {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+.project-card:hover .project-img {
+    transform: scale(1.05);
 }
 
 .project-overlay {
@@ -624,21 +767,32 @@ background-color: #fff8e1; /* Light Yellow */
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.project-icon {
-    font-size: 4rem;
-    animation: bounce 2s infinite;
+.project-card:hover .project-overlay {
+    opacity: 1;
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-10px); }
-    60% { transform: translateY(-5px); }
+.project-overlay-content {
+    text-align: center;
+    color: white;
+}
+
+.project-overlay-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.project-overlay-content p {
+    font-size: 0.9rem;
+    opacity: 0.9;
 }
 
 .project-content {

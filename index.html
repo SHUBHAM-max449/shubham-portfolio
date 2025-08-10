@@ -37,6 +37,7 @@
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -92,8 +93,13 @@
                 <br>
                 <p>With proficiency in Python, TensorFlow, AWS, Docker, and modern AI frameworks, I have proven ability to deliver end-to-end ML solutions from concept to deployment. My professional journey includes developing chatbots, document processing pipelines, and image enhancement systems, where I've consistently delivered high-quality solutions that meet business objectives.</p>
             </div>
-            <div class="skills-grid">
-                <div class="skill-category">
+            <div class="skills-section">
+                <div class="skills-header">
+                </div>
+                <section id="skills" class="section skills-section">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <div class="skills-grid">
+                    <div class="skill-category glass-card glass-skill">
                     <h4>Machine Learning & Deep Learning</h4>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
@@ -104,7 +110,7 @@
                         <span class="skill-tag">XGBoost</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category glass-card glass-skill">
                     <h4>Computer Vision</h4>
                     <div class="skill-tags">
                         <span class="skill-tag">OpenCV</span>
@@ -115,7 +121,7 @@
                         <span class="skill-tag">Layout Analysis</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category glass-card glass-skill">
                     <h4>Natural Language Processing</h4>
                     <div class="skill-tags">
                         <span class="skill-tag">LLMs</span>
@@ -126,7 +132,7 @@
                         <span class="skill-tag">spaCy</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category glass-card glass-skill">
                     <h4>Cloud & DevOps</h4>
                     <div class="skill-tags">
                         <span class="skill-tag">AWS</span>
@@ -137,7 +143,7 @@
                         <span class="skill-tag">CI/CD</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category glass-card glass-skill">
                     <h4>Data Engineering & MLOps</h4>
                     <div class="skill-tags">
                         <span class="skill-tag">MLflow</span>
@@ -148,7 +154,7 @@
                         <span class="skill-tag">Prometheus</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category glass-card glass-skill">
                     <h4>Data Analysis & Visualization</h4>
                     <div class="skill-tags">
                         <span class="skill-tag">SQL</span>
@@ -160,6 +166,7 @@
                     </div>
                 </div>
             </div>
+        </section>
         </div>
     </section>
 
@@ -238,60 +245,68 @@
         </p>
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-image project-img-1">
+                <div class="project-image">
+                    <img src="assets/images/project1.jpg" alt="Vehicle Insurance Prediction" class="project-img">
                     <div class="project-overlay">
-                        <span class="project-icon">🚗</span>
+                        <div class="project-overlay-content">
+                            <h4>MLOps Pipeline</h4>
+                            <p>View Details</p>
+                        </div>
                     </div>
                 </div>
                 <div class="project-content">
                     <h3 class="project-title">Cloud-Based MLOps Pipeline for Vehicle Insurance Prediction</h3>
-                    <p class="project-description">Engineered an automated, scalable MLOps pipeline on AWS (EC2, S3) for seamless data ingestion and model training. Streamlined CI/CD workflows for insurance risk models, enhancing deployment speed by 60% and ensuring reproducibility.</p>
+                    <p class="project-description">Engineered an automated, scalable MLOps pipeline on AWS for seamless data ingestion and model training with CI/CD workflows, enhancing deployment speed by 60%.</p>
                     <div class="project-tags">
                         <span class="project-tag">AWS</span>
                         <span class="project-tag">MLOps</span>
                         <span class="project-tag">CI/CD</span>
                         <span class="project-tag">Docker</span>
                         <span class="project-tag">Python</span>
-                        <span class="project-tag">EC2</span>
-                        <span class="project-tag">S3</span>
                     </div>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image project-img-2">
+                <div class="project-image">
+                    <img src="assets/images/project2.jpg" alt="Medical Chatbot" class="project-img">
                     <div class="project-overlay">
-                        <span class="project-icon">🏥</span>
+                        <div class="project-overlay-content">
+                            <h4>RAG Chatbot</h4>
+                            <p>View Details</p>
+                        </div>
                     </div>
                 </div>
                 <div class="project-content">
                     <h3 class="project-title">Medical Chatbot (RAG Application)</h3>
-                    <p class="project-description">Developed a RAG chatbot using LLMs, LangChain, and Pinecone for accurate, context-aware information retrieval with CI/CD. Deployed scalable, real-time backend with Docker, Flask, and AWS (EC2, ECR) supporting seamless healthcare interactions.</p>
+                    <p class="project-description">Developed a RAG chatbot using LLMs, LangChain, and Pinecone for accurate, context-aware information retrieval with scalable real-time backend deployment.</p>
                     <div class="project-tags">
                         <span class="project-tag">LLMs</span>
                         <span class="project-tag">RAG</span>
                         <span class="project-tag">LangChain</span>
                         <span class="project-tag">Pinecone</span>
                         <span class="project-tag">Flask</span>
-                        <span class="project-tag">Docker</span>
                     </div>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image project-img-3">
+                <div class="project-image">
+                    <img src="assets/images/project3.jpg" alt="No Code AutoML" class="project-img">
                     <div class="project-overlay">
-                        <span class="project-icon">🤖</span>
+                        <div class="project-overlay-content">
+                            <h4>AutoML Platform</h4>
+                            <p>View Details</p>
+                        </div>
                     </div>
                 </div>
                 <div class="project-content">
                     <h3 class="project-title">No Code Auto-ML Web App</h3>
-                    <p class="project-description">Built a comprehensive web app using Python and Streamlit that automates the entire ML workflow from data preprocessing to model comparison, reducing manual development time by 70% and enabling non-technical users to build ML models effortlessly.</p>
+                    <p class="project-description">Built a comprehensive web app using Python and Streamlit that automates the entire ML workflow, reducing manual development time by 70% and enabling non-technical users to build ML models effortlessly.</p>
                     <div class="project-tags">
                         <span class="project-tag">Streamlit</span>
                         <span class="project-tag">AutoML</span>
                         <span class="project-tag">Python</span>
                         <span class="project-tag">Machine Learning</span>
                         <span class="project-tag">Data Science</span>
-                        <span class="project-tag">No-Code</span>
                     </div>
                 </div>
             </div>
